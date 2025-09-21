@@ -3,11 +3,11 @@ import dcLogo from '../img/dc-logo.png'
 export default function AppHeader() {
     return (
         <header>
-            <div className='container mt-5'>
+            <div className='container mt-5 d-flex align-items-center p-2'>
                 <img src={dcLogo} alt="DC-logo-Header" />
-                <nav>
+                <nav className='ms-auto ms-5'>
                     <a href="">characters</a>
-                    <a href="">comics</a>
+                    <a href="" className='active'>comics</a>
                     <a href="">movies</a>
                     <a href="">tv</a>
                     <a href="">games</a>
