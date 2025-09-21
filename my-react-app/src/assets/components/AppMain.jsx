@@ -7,8 +7,9 @@ export default function AppMain() {
     const title = 'Benvenuto nel sito della DC Comics!'
     return (
         <main>
-            <div><h1 style={{ textAlign: 'start' }}>{title}</h1></div>
-            <div className="container">
+
+            <div className="container mt-5">
+                <div><h1 style={{ textAlign: 'start' }}>{title}</h1></div>
                 <div className="row">
                     <div className="col">
                         <img src={dcIcon} alt="" />
