@@ -20,11 +20,15 @@ header a {
 
   &.active {
     color: #0282f9;
+    border-bottom: #0282f9 5px solid;
+    padding-bottom: 67px;
   }
 }
 
 header a:hover {
   color: #0282f9;
+  border-bottom: #0282f9 5px solid;
+  padding-bottom: 67px;
 }
 
 /* main */
