@@ -3,6 +3,7 @@ import merchandideIcon from '../img/merchandise.png';
 import subscriptionIcon from '../img/subscriptions.png';
 import locatorIcon from '../img/locator.png';
 import visaIcon from '../img/visa.svg'
+
 export default function AppMain() {
     const title = 'Benvenuto nel sito della DC Comics!'
     return (
@@ -43,12 +44,10 @@ export default function AppMain() {
                                 <a href="">DC POWER VISA</a>
                             </div>
                         </div>
-
-
                     </div>
-
                 </div>
             </div>
+
         </main>
     )
 

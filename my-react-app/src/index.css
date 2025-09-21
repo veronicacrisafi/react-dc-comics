@@ -35,3 +35,45 @@ main a:hover {
   display: block;
   margin: 0 auto 10px auto;
 }
+
+
+
+.dc-image {
+  background-image: url('./assets/img/dc-logo-bg.png'), url('./assets/img/footer-bg.jpg');
+  background-repeat: no-repeat, no-repeat;
+  background-size: 830px, cover;
+  background-position: right, center;
+  height: 550px;
+
+}
+
+.dc-footer {
+  background-image: url('./assets/img/dc-logo-bg.png');
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: right;
+
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  margin-bottom: 8px;
+}
+
+
+
+footer a {
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  color: #656359;
+  font-size: 11px;
+}
+
+footer a:hover {
+  color: #0282f9;
+}
