@@ -1,8 +1,16 @@
+/* reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: 'Open Sans Variable', sans-serif;
+}
+
+/* header */
+
 
 header a {
   text-decoration: none;
@@ -19,9 +27,14 @@ header a:hover {
   color: #0282f9;
 }
 
+/* main */
+
+
+
 main a {
   color: white;
   text-decoration: none;
+  font-family: 'Open Sans Variable', sans-serif;
 }
 
 main a:hover {
@@ -37,23 +50,17 @@ main a:hover {
 }
 
 
-
+/* footer */
 .dc-image {
   background-image: url('./assets/img/dc-logo-bg.png'), url('./assets/img/footer-bg.jpg');
   background-repeat: no-repeat, no-repeat;
-  background-size: 830px, cover;
+  background-size: 730px, cover;
   background-position: right, center;
-  height: 550px;
+
 
 }
 
-.dc-footer {
-  background-image: url('./assets/img/dc-logo-bg.png');
-  height: 300px;
-  background-repeat: no-repeat;
-  background-position: right;
 
-}
 
 footer ul {
   list-style: none;
@@ -64,14 +71,13 @@ footer ul li {
   margin-bottom: 8px;
 }
 
-
-
 footer a {
   text-decoration: none;
   display: block;
   text-align: left;
   color: #656359;
   font-size: 11px;
+
 }
 
 footer a:hover {

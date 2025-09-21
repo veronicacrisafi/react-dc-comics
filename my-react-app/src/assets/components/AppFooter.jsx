@@ -70,11 +70,11 @@ export default function AppFooter() {
                     <div className="row">
                         <div className="col ms-5">
                             <button className='btn btn-outline-primary rounded-0 border-2 '>
-                                <a href="" className='text-light'>SIGN-UP NOW!</a>
+                                <a href="" className='fs-6 text-light'>SIGN-UP NOW!</a>
                             </button>
                         </div>
                         <div className="col d-flex align-items-center ms-5">
-                            <h4 className="text-primary pt-2 ms-5">FOLLOW US</h4>
+                            <h4 className="fs-6 text-primary pt-2 ms-5">FOLLOW US</h4>
                             <a href="">
                                 <img src={facebookIcon} alt="" className='footer-icon ms-5' />
                             </a>
@@ -95,6 +95,7 @@ export default function AppFooter() {
                     </div>
                 </div>
             </div>
+
 
         </footer >
     )
