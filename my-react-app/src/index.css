@@ -42,7 +42,7 @@ main a {
 }
 
 main a:hover {
-  color: blue;
+  color: #0282f9;
 }
 
 .main-icon {
@@ -53,6 +53,9 @@ main a:hover {
   margin: 0 auto 10px auto;
 }
 
+.main-bg {
+  background-color: #0282f9;
+}
 
 /* footer */
 .dc-image {
@@ -62,7 +65,9 @@ main a:hover {
   background-position: 80%, center;
 }
 
-
+.color-follow {
+  color: #0282f9;
+}
 
 footer ul {
   list-style: none;
