@@ -74,7 +74,7 @@ export default function AppFooter() {
                             </button>
                         </div>
                         <div className="col d-flex align-items-center ms-5">
-                            <h4 className="fs-6 text-primary pt-2 ms-5">FOLLOW US</h4>
+                            <h4 className="color-follow fs-6 pt-2 ms-5">FOLLOW US</h4>
                             <a href="">
                                 <img src={facebookIcon} alt="" className='footer-icon ms-5' />
                             </a>

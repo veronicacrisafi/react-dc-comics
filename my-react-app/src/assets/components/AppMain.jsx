@@ -11,7 +11,7 @@ export default function AppMain() {
             <div className='bg-dark'>
                 <div className='container text-white  mt-4 p-5'><h1 style={{ textAlign: 'center' }}>{title}</h1></div>
             </div>
-            <div className='bg-primary'>
+            <div className='main-bg'>
                 <div className="container p-5">
                     <div className="row">
                         <div className="col d-flex align-items-center">
