@@ -1,10 +1,13 @@
+import { useState } from 'react';
 import dcIcon from '../assets/img/digital.png';
 import merchandideIcon from '../assets/img/merchandise.png';
 import subscriptionIcon from '../assets/img/subscriptions.png';
 import locatorIcon from '../assets/img/locator.png';
 import visaIcon from '../assets/img/visa.svg'
+import jumboIcon from '../assets/img/jumbotron.jpg'
 
 export default function AppMain() {
+    const [showImage, setShowImage] = useState(false);
     const title = 'Benvenuto nel sito della DC Comics!'
     return (
         <main>
@@ -23,7 +26,8 @@ export default function AppMain() {
                         <div className="col d-flex align-items-center">
                             <img src={merchandideIcon} alt="" className='main-icon' />
                             <div>
-                                <a href="">DC MERCHANDISE</a>
+                                <a href="#" onClick={e => { e.preventDefault(); setShowImage(true) }}>DC MERCHANDISE</a>
+                                {showImage && <img src={jumboIcon} alt="Merchandise" className='jumbo-popup' />}
                             </div>
                         </div>
                         <div className="col d-flex align-items-center">
@@ -38,7 +42,7 @@ export default function AppMain() {
                                 <a href="">COMIC SHOP LOCATOR</a>
                             </div>
                         </div>
-                        <div className="col d-flex align-items-center">
+                        <div className="col d-flex align-items-center me-5">
                             <img src={visaIcon} alt="" className='main-icon' />
                             <div>
                                 <a href="">DC POWER VISA</a>
