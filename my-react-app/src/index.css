@@ -42,7 +42,7 @@ main a {
 }
 
 main a:hover {
-  color: #0282f9;
+  color: blue;
 }
 
 .main-icon {

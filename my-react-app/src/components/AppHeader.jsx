@@ -1,4 +1,4 @@
-import dcLogo from '../img/dc-logo.png'
+import dcLogo from '../assets/img/dc-logo.png'
 
 export default function AppHeader() {
     return (

@@ -1,8 +1,8 @@
-import facebookIcon from '../img/footer-facebook.png';
-import twitterIcon from '../img/footer-twitter.png';
-import youtubeIcon from '../img/footer-youtube.png'
-import pinterestIcon from '../img/footer-pinterest.png'
-import periscopeIcon from '../img/footer-periscope.png'
+import facebookIcon from '../assets/img/footer-facebook.png';
+import twitterIcon from '../assets/img/footer-twitter.png';
+import youtubeIcon from '../assets/img/footer-youtube.png';
+import pinterestIcon from '../assets/img/footer-pinterest.png';
+import periscopeIcon from '../assets/img/footer-periscope.png';
 
 export default function AppFooter() {
     return (
@@ -24,13 +24,13 @@ export default function AppFooter() {
                                 <li><a href="">Games</a></li>
                                 <li><a href="">Videos</a></li>
                                 <li><a href="">News</a></li>
-                                <h6 className="text-light pt-4">SHOP</h6>
-                                <ul>
-                                    <li><a href="">Shop DC</a></li>
-                                    <li><a href="">Shop DC Collectibles</a></li>
-
-                                </ul>
-
+                                <li>
+                                    <h6 className="text-light pt-4">SHOP</h6>
+                                    <ul>
+                                        <li><a href="">Shop DC</a></li>
+                                        <li><a href="">Shop DC Collectibles</a></li>
+                                    </ul>
+                                </li>
                             </ul>
                         </div>
 
@@ -65,16 +65,18 @@ export default function AppFooter() {
                 </div>
             </div>
 
-            <div className="bg-dark p-4 ">
+            <div className="bg-dark">
                 <div className="container">
                     <div className="row">
-                        <div className="col ms-5">
+                        <div className="col d-flex ms-5 pt-4 pb-4">
                             <button className='btn btn-outline-primary rounded-0 border-2 '>
                                 <a href="" className='fs-6 text-light'>SIGN-UP NOW!</a>
                             </button>
                         </div>
-                        <div className="col d-flex align-items-center ms-5">
-                            <h4 className="color-follow fs-6 pt-2 ms-5">FOLLOW US</h4>
+                        <div className="col d-flex align-items-center ms-5 pt-4 pb-4">
+                            <h4 className="color-follow fs-6 ">FOLLOW US</h4>
+
+
                             <a href="">
                                 <img src={facebookIcon} alt="" className='footer-icon ms-5' />
                             </a>
@@ -91,9 +93,12 @@ export default function AppFooter() {
                                 <img src={periscopeIcon} alt="" className='footer-icon ms-3' />
                             </a>
 
+
                         </div>
                     </div>
                 </div>
+
+
             </div>
 
 

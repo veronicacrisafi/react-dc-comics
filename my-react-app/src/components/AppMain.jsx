@@ -1,8 +1,8 @@
-import dcIcon from '../img/digital.png';
-import merchandideIcon from '../img/merchandise.png';
-import subscriptionIcon from '../img/subscriptions.png';
-import locatorIcon from '../img/locator.png';
-import visaIcon from '../img/visa.svg'
+import dcIcon from '../assets/img/digital.png';
+import merchandideIcon from '../assets/img/merchandise.png';
+import subscriptionIcon from '../assets/img/subscriptions.png';
+import locatorIcon from '../assets/img/locator.png';
+import visaIcon from '../assets/img/visa.svg'
 
 export default function AppMain() {
     const title = 'Benvenuto nel sito della DC Comics!'
