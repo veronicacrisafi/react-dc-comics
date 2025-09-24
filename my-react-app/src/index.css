@@ -21,7 +21,7 @@ header a {
   &.active {
     color: #0282f9;
     border-bottom: #0282f9 5px solid;
-    padding-bottom: 67px;
+    padding-bottom: 43px;
   }
 }
 
@@ -57,12 +57,12 @@ main a:hover {
   background-color: #0282f9;
 }
 
-.jumbo-popup {
+/* .jumbo-popup {
   max-width: 500px;
   width: 250px;
   height: auto;
   border-radius: 10px;
-}
+} */
 
 /* footer */
 .dc-image {
@@ -70,6 +70,13 @@ main a:hover {
   background-repeat: no-repeat, no-repeat;
   background-size: 730px, cover;
   background-position: 80%, center;
+}
+
+.bg-jumbotron {
+  background-image: url('./assets/img/jumbotron.jpg');
+  height: 450px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .color-follow {
