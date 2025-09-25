@@ -14,7 +14,7 @@ export default function AppMain() {
         <main>
             <div className='bg-jumbotron'></div>
             <div className='bg-dark'>
-                <div className='container text-white  mt-4 p-5'><h1 style={{ textAlign: 'center' }}>{title}</h1></div>
+                <div className='container text-white p-5'><h1 style={{ textAlign: 'center' }}>{title}</h1></div>
                 <div className='container'>
                     <div className="row">
                         <div className="col-2">
@@ -72,7 +72,7 @@ export default function AppMain() {
                         </div>
                         <div className="col d-flex align-items-center">
                             <img src={merchandideIcon} alt="" className='main-icon' />
-
+                            <a href="">DC MERCHANDISE</a>
                             {/* BONUS DA LAVORARE */}
                             {/*   <div>
                                 <a href="#" onClick={e => { e.preventDefault(); setShowImage(true) }}>DC MERCHANDISE</a>
