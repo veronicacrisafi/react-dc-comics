@@ -91,12 +91,12 @@ export default function AppMain() {
                         <div className="col d-flex align-items-center">
                             <img src={dcIcon} alt="" className='main-icon' />
                             <div>
-                                <a href="">DIGITAL COMICS</a>
+                                <a href="" style={{ fontSize: "14px" }}>DIGITAL COMICS</a>
                             </div>
                         </div>
                         <div className="col d-flex align-items-center">
                             <img src={merchandideIcon} alt="" className='main-icon' />
-                            <a href="">DC MERCHANDISE</a>
+                            <a href="" style={{ fontSize: "14px" }}>DC MERCHANDISE</a>
                             {/* BONUS DA LAVORARE */}
                             {/*   <div>
                                 <a href="#" onClick={e => { e.preventDefault(); setShowImage(true) }}>DC MERCHANDISE</a>
@@ -106,19 +106,19 @@ export default function AppMain() {
                         <div className="col d-flex align-items-center">
                             <img src={subscriptionIcon} alt="" className='main-icon' />
                             <div>
-                                <a href="">SUBSCRIPTION</a>
+                                <a href="" style={{ fontSize: "14px" }}>SUBSCRIPTION</a>
                             </div>
                         </div>
                         <div className="col d-flex align-items-center">
                             <img src={locatorIcon} alt="" className='main-icon' />
                             <div>
-                                <a href="">COMIC SHOP LOCATOR</a>
+                                <a href="" style={{ fontSize: "14px" }} >COMIC SHOP LOCATOR</a>
                             </div>
                         </div>
                         <div className="col d-flex align-items-center me-5">
                             <img src={visaIcon} alt="" className='main-icon' />
                             <div>
-                                <a href="">DC POWER VISA</a>
+                                <a href="" style={{ fontSize: "14px" }}>DC POWER VISA</a>
                             </div>
                         </div>
                     </div>
