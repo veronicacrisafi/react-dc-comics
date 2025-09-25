@@ -79,7 +79,7 @@ export default function AppMain() {
                         </div>
                     </div>
                     <div className='text-center'>
-                        <a href="" className="btn btn-primary text-uppercase rounded-0 mb-4" target="_blank" rel="noopener noreferrer">
+                        <a href="" className="btn btn-primary text-uppercase rounded-0 mb-4 px-5 fw-bold" target="_blank" rel="noopener noreferrer">
                             load more
                         </a>
                     </div>

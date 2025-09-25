@@ -11,7 +11,6 @@ body {
 
 /* header */
 
-
 header a {
   text-decoration: none;
   margin-right: 16px;
@@ -21,14 +20,14 @@ header a {
   &.active {
     color: #0282f9;
     border-bottom: #0282f9 5px solid;
-    padding-bottom: 43px;
+    padding-bottom: 60px;
   }
 }
 
 header a:hover {
   color: #0282f9;
   border-bottom: #0282f9 5px solid;
-  padding-bottom: 67px;
+  padding-bottom: 60px;
 }
 
 /* main */
