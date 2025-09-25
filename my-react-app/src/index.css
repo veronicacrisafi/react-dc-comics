@@ -56,13 +56,6 @@ main a:hover {
   background-color: #0282f9;
 }
 
-/* .jumbo-popup {
-  max-width: 500px;
-  width: 250px;
-  height: auto;
-  border-radius: 10px;
-} */
-
 /* footer */
 .dc-image {
   background-image: url('./assets/img/dc-logo-bg.png'), url('./assets/img/footer-bg.jpg');

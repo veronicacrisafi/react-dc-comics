@@ -4,11 +4,11 @@ import merchandideIcon from '../assets/img/merchandise.png';
 import subscriptionIcon from '../assets/img/subscriptions.png';
 import locatorIcon from '../assets/img/locator.png';
 import visaIcon from '../assets/img/visa.svg'
-import jumboIcon from '../assets/img/jumbotron.jpg'
 import AppFumetti from './AppFumetti'
 
 export default function AppMain() {
-    //const [showImage, setShowImage] = useState(false);
+    const [showModal, setShowModal] = useState(false);
+    const [showDropdown, setShowDropdown] = useState(false);
     const title = 'Benvenuto nel sito della DC Comics!'
     return (
         <main>
@@ -96,12 +96,60 @@ export default function AppMain() {
                         </div>
                         <div className="col d-flex align-items-center">
                             <img src={merchandideIcon} alt="" className='main-icon' />
-                            <a href="" style={{ fontSize: "14px" }}>DC MERCHANDISE</a>
-                            {/* BONUS DA LAVORARE */}
-                            {/*   <div>
-                                <a href="#" onClick={e => { e.preventDefault(); setShowImage(true) }}>DC MERCHANDISE</a>
-                                {showImage && <img src={jumboIcon} alt="Merchandise" className='jumbo-popup' />}
-                            </div> */}
+                            {/* BONUS */}
+                            <>
+                                <a href="" style={{ fontSize: "14px" }} onClick={e => { e.preventDefault(); setShowModal(true) }}>DC MERCHANDISE</a>
+                                {showModal && (
+                                    <div className="modal d-block" tabIndex="-1" style={{ background: "rgba(0,0,0,0.5)" }}>
+                                        <div className="modal-dialog">
+                                            <div className="modal-content">
+                                                <div className="modal-header">
+                                                    <h5 className="modal-title">Ciao! Quale gadget stai cercando?</h5>
+                                                    <button
+                                                        type="button"
+                                                        className="btn-close"
+                                                        aria-label="Close"
+                                                        onClick={() => setShowModal(false)}
+                                                    ></button>
+                                                </div>
+                                                <div className="modal-body">
+                                                    <div className="btn-group">
+                                                        <button
+                                                            className="btn btn-secondary btn-lg dropdown-toggle"
+                                                            type="button"
+                                                            onClick={() => setShowDropdown(!showDropdown)}
+                                                        >
+                                                            Lista Gadget
+                                                        </button>
+                                                        {showDropdown && (
+                                                            <ul className="dropdown-menu show" style={{ position: "static", float: "none" }}>
+                                                                <li><a className="dropdown-item" href="#">Tazza DC Comics</a></li>
+                                                                <li><a className="dropdown-item" href="#">T-shirt Superman</a></li>
+                                                                <li><a className="dropdown-item" href="#">Cappellino Batman</a></li>
+                                                                <li><a className="dropdown-item" href="#">Zaino Wonder Woman</a></li>
+                                                                <li><a className="dropdown-item" href="#">Portachiavi Flash</a></li>
+                                                            </ul>
+                                                        )}
+                                                    </div>
+                                                </div>
+                                                <div className="modal-footer">
+                                                    <button
+                                                        type="button"
+                                                        className="btn btn-secondary"
+                                                        onClick={() => setShowModal(false)}
+                                                    >
+                                                        Chiudi
+                                                    </button>
+                                                    <button type="button" className="btn btn-primary">
+                                                        Avanti
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                )}
+                            </>
+                            {/* FINE BONUS */}
                         </div>
                         <div className="col d-flex align-items-center">
                             <img src={subscriptionIcon} alt="" className='main-icon' />
