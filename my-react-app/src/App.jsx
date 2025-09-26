@@ -7,14 +7,16 @@ import AppMain from './components/AppMain'
 import AppFooter from './components/AppFooter'
 
 import '@fontsource-variable/open-sans';
+const film = ["batman", "superman", "flash"]
 function App() {
 
 
   return (
     <>
-      <AppHeader />
+      <AppHeader film={film} />
       <AppMain />
       <AppFooter />
+
     </>
   )
 }

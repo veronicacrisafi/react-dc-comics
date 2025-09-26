@@ -4,6 +4,63 @@ import youtubeIcon from '../assets/img/footer-youtube.png';
 import pinterestIcon from '../assets/img/footer-pinterest.png';
 import periscopeIcon from '../assets/img/footer-periscope.png';
 
+const footerDinamico = [
+    {
+        id: 1,
+        title: "DC COMICS",
+        list: [
+
+            { id: 1, label: "Characters", url: "" },
+            { id: 2, label: "Comics", url: "" },
+            { id: 3, label: "Movies", url: "" },
+            { id: 4, label: "TV", url: "" },
+            { id: 5, label: "Games", url: "" },
+            { id: 6, label: "Videos", url: "" },
+            { id: 7, label: "News", url: "" },
+        ]
+    },
+
+    {
+        id: 2,
+        title: "DC",
+        list: [
+            { id: 1, label: "Terms Of Use", url: "" },
+            { id: 2, label: "Privacy policy(New)", url: "" },
+            { id: 3, label: "Ad Choises", url: "" },
+            { id: 4, label: "Advertising", url: "" },
+            { id: 5, label: "Jobs", url: "" },
+            { id: 6, label: "Subscription", url: "" },
+            { id: 7, label: "Talent Workshops", url: "" },
+            { id: 8, label: "CPSC Certificates", url: "" },
+            { id: 9, label: "Ratings", url: "" },
+            { id: 10, label: "Shop Help", url: "" },
+            { id: 11, label: "Contact Us", url: "" }
+        ]
+    },
+    {
+        id: 3,
+        title: "SITES",
+        list: [
+            { id: 1, label: "DC", url: "" },
+            { id: 2, label: "MAD Magazine", url: "" },
+            { id: 3, label: "DC Kids", url: "" },
+            { id: 4, label: "DC Universe", url: "" },
+            { id: 5, label: "DC Power Visa", url: "" }
+        ]
+    },
+    {
+        id: 4,
+        title: "SHOP",
+        list: [
+            { id: 1, label: "Shop DC", url: "" },
+            { id: 2, label: "Shop DC Collectibles", url: "" }
+        ]
+    }
+];
+
+
+
+
 export default function AppFooter() {
     return (
         <footer>
@@ -12,53 +69,21 @@ export default function AppFooter() {
                 <div className="container d-flex align-items-start p-5">
 
                     <div className="row">
-                        <div className="col pt-5 p-3">
-                            <h6 className="text-light">DC COMICS</h6>
-                            <ul>
-                                <li><a href="">Characters</a></li>
-                                <li><a href="">Comics</a></li>
-                                <li><a href="">Movies</a></li>
-                                <li><a href="">TV</a></li>
-                                <li><a href="">Games</a></li>
-                                <li><a href="">Videos</a></li>
-                                <li><a href="">News</a></li>
-                                <li>
-                                    <h6 className="text-light pt-4">SHOP</h6>
-                                    <ul>
-                                        <li><a href="">Shop DC</a></li>
-                                        <li><a href="">Shop DC Collectibles</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
+                        {footerDinamico.map((itemTitle, idTitle) => (
+                            <div className='col pt-5 p-3' key={idTitle}>
+                                <h6 className='text-light'>{itemTitle.title}</h6>
+                                <ul>
+                                    {itemTitle.list.map((itemList, idList) =>
 
-                        <div className="col pt-5 p-3">
-                            <h6 className="text-light">DC</h6>
-                            <ul>
-                                <li><a href="">Terms Of Use</a></li>
-                                <li><a href="">Privacy policy(New)</a></li>
-                                <li><a href="">Ad Choises</a></li>
-                                <li><a href="">Advertising</a></li>
-                                <li><a href="">Jobs</a></li>
-                                <li><a href="">Subscription</a></li>
-                                <li><a href="">Talent Workshops</a></li>
-                                <li><a href="">CPSC Certificates</a></li>
-                                <li><a href="">Ratings</a></li>
-                                <li><a href="">Shop Help</a></li>
-                                <li><a href="">Contact Us</a></li>
+                                        <li key={idList}>
+                                            <a href="">{itemList.label}</a>
+                                        </li>
+                                    )
+                                    }
+                                </ul>
+                            </div>
 
-                            </ul>
-                        </div>
-                        <div className="col pt-5 p-3">
-                            <h6 className="text-light">SITES</h6>
-                            <ul>
-                                <li><a href="">DC</a></li>
-                                <li><a href="">MAD Magazine</a></li>
-                                <li><a href="">DC Kids</a></li>
-                                <li><a href="">DC Universe</a></li>
-                                <li><a href="">DC Power Visa</a></li>
-                            </ul>
-                        </div>
+                        ))}
                     </div>
                 </div>
             </div>
