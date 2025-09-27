@@ -59,6 +59,8 @@ export default function AppHeader() {
                     <a href="">fans</a>
                     <a href="">news</a>
                     <a href="">shop</a> */}
+
+
                     <ul className="d-flex gap-3 list-unstyled">
                         {navHeader.map(item => (
                             <li key={item.id}>

@@ -5,6 +5,7 @@ import subscriptionIcon from '../assets/img/subscriptions.png';
 import locatorIcon from '../assets/img/locator.png';
 import visaIcon from '../assets/img/visa.svg'
 import AppFumetti from './AppFumetti'
+import fumettiData from '../data/fumettiData'
 
 export default function AppMain() {
     const [showModal, setShowModal] = useState(false);
@@ -17,12 +18,24 @@ export default function AppMain() {
                 <div className='container text-white p-5'><h1 style={{ textAlign: 'center' }}>{title}</h1></div>
                 <div className='container'>
                     <div className="row">
-                        <div className="col-2">
-                            <AppFumetti imgURL="https://imgs.search.brave.com/aUNyvZBXUulb963JH7KnQm9AMr8bcBoLsiHREOqayIU/rs:fit:612:612:1/g:ce/aHR0cHM6Ly9pNS53/YWxtYXJ0aW1hZ2Vz/LmNvbS9hc3IvOWZm/ZWYzMDMtMGZhYy00/OGRkLTg3ODctYzUy/NTk0MDk2ODAwXzEu/MTc1ZDk1Mjg2NzY0/OGEwOTczMTY2NGMy/MTE1NjNlYWIuanBl/Zz9vZG5XaWR0aD02/MTImb2RuSGVpZ2h0/PTYxMiZvZG5CZz1m/ZmZmZmY" title="ACTION COMICS">
+                        <div className="row">
+                            {fumettiData.map((fumetto, idFumetto) => (
+                                <div className="col-2" key={fumetto.idFumetto}>
+                                    <AppFumetti
+                                        thumb={fumetto.thumb}
+                                        series={fumetto.series}
+                                    >
+                                        <p className='text-light text-start mb-5'>{fumetto.price}</p>
+                                    </AppFumetti>
+                                </div>
+                            ))}
+
+
+                            {/*  <AppFumetti imgURL="https://imgs.search.brave.com/aUNyvZBXUulb963JH7KnQm9AMr8bcBoLsiHREOqayIU/rs:fit:612:612:1/g:ce/aHR0cHM6Ly9pNS53/YWxtYXJ0aW1hZ2Vz/LmNvbS9hc3IvOWZm/ZWYzMDMtMGZhYy00/OGRkLTg3ODctYzUy/NTk0MDk2ODAwXzEu/MTc1ZDk1Mjg2NzY0/OGEwOTczMTY2NGMy/MTE1NjNlYWIuanBl/Zz9vZG5XaWR0aD02/MTImb2RuSGVpZ2h0/PTYxMiZvZG5CZz1m/ZmZmZmY" title="ACTION COMICS">
                                 <p className='text-light text-start mb-5'>$19.99</p>
-                            </AppFumetti>
+                            </AppFumetti> */}
                         </div>
-                        <div className="col-2">
+                        {/* <div className="col-2">
                             <AppFumetti imgURL="https://imgs.search.brave.com/OU2E3_3vA7flyv-SJ3TcFW1d99KDlp5ZfmW9ylLLFDo/rs:fit:1012:1200:1/g:ce/aHR0cHM6Ly9pMC53/cC5jb20vd3d3LnN1/cGVycG91dm9pci5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MjAvMDcvQW1lcmlj/YW4tVmFtcGlyZS0x/OTc2LTAxLWNvdi1B/bGJ1cXVlcnF1ZS0y/MDIwLmpwZz9yZXNp/emU9MTAxMiUyQzE1/NTYmc3NsPTE" title="AMERICAN VAMPIRE 1976">
                                 <p className='text-light text-start mb-5'>$3.99</p>
                             </AppFumetti>
@@ -76,7 +89,7 @@ export default function AppMain() {
                             <AppFumetti imgURL="https://imgs.search.brave.com/bf_FlGnymAgmvweY8YiLAcyy600JdSMl_jHpdR3t5ro/rs:fit:612:612:1/g:ce/aHR0cHM6Ly9pNS53/YWxtYXJ0aW1hZ2Vz/LmNvbS9hc3IvNTA5/M2IxOTEtZTkzZS00/NTJjLThhYTQtYTEw/ZDY0ZTcxN2E5LjA5/N2UwZWM5NDgzYzky/OGExMjY4Nzk1Nzk2/NTliZWNjLmpwZWc_/b2RuV2lkdGg9NjEy/Jm9kbkhlaWdodD02/MTImb2RuQmc9ZmZm/ZmZm" title="catwoman">
                                 <p className='text-light text-start mb-5'>$16.99</p>
                             </AppFumetti>
-                        </div>
+                        </div>*/}
                     </div>
                     <div className='text-center'>
                         <a href="" className="btn btn-primary text-uppercase rounded-0 mb-4 px-5 fw-bold" target="_blank" rel="noopener noreferrer">
