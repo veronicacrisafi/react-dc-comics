@@ -7,7 +7,7 @@ import visaIcon from '../assets/img/visa.svg'
 import AppFumetti from './AppFumetti'
 import fumettiData from '../data/fumettiData'
 
-export default function AppMain() {
+export default function AppMain({ fumetti }) {
     const [showModal, setShowModal] = useState(false);
     const [showDropdown, setShowDropdown] = useState(false);
     const title = 'Benvenuto nel sito della DC Comics!'
@@ -18,7 +18,7 @@ export default function AppMain() {
                 <div className='container text-white p-5'><h1 style={{ textAlign: 'center' }}>{title}</h1></div>
                 <div className='container'>
                     <div className="row">
-                        {fumettiData.map((fumetto) => (
+                        {fumetti.map((fumetto) => (
                             <div className="col-2" key={fumetto.id}>
                                 <AppFumetti
                                     thumb={fumetto.thumb}
