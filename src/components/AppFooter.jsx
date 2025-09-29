@@ -70,7 +70,7 @@ export default function AppFooter() {
 
                     <div className="row">
                         {footerDinamico.map((itemTitle, idTitle) => (
-                            <div className='col pt-5 p-3' key={idTitle}>
+                            <div className='col-4 pt-5 p-3' key={idTitle}>
                                 <h6 className='text-light'>{itemTitle.title}</h6>
                                 <ul>
                                     {itemTitle.list.map((itemList, idList) =>
