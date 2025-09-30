@@ -5,7 +5,6 @@ import subscriptionIcon from '../assets/img/subscriptions.png';
 import locatorIcon from '../assets/img/locator.png';
 import visaIcon from '../assets/img/visa.svg'
 import AppFumetti from './AppFumetti'
-import fumettiData from '../data/fumettiData'
 
 export default function AppMain({ fumetti }) {
     const [showModal, setShowModal] = useState(false);

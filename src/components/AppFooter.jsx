@@ -18,6 +18,7 @@ const footerDinamico = [
             { id: 6, label: "Videos", url: "" },
             { id: 7, label: "News", url: "" },
         ]
+
     },
 
     {
